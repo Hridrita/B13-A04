@@ -62,30 +62,32 @@ body {
 
 /* Hero / Banner (background image) */
 .hero {
-  min-height: calc(100vh - 92px);   /* navbar বাদে পুরো height */
-  background-image: url('../assets/hero-bg.png');  /* নিজের image এর নাম দাও */
+  min-height: calc(100vh - 92px);
+  background-image: url('../assets/hero-bg.png');
   background-size: cover;
   background-position: center;
   color: #ffffff;
+
   display: flex;
   align-items: center;
+  justify-content: center;   /* box ke center e */
 }
 
-/* Hero content */
 .hero-content {
-  max-width: 600px;
-  padding: 80px 120px 120px;  /* top/right/ bottom padding */
+  max-width: 720px;          /* Figma te joto dekho, 700–760 ভাল কাজ করে */
+  padding: 120px 120px 150px;/* Figma padding: left 120, top approx 120 */
+  text-align: center;        /* text center, Figma moto */
 }
 
-/* Small pill badge */
 .badge {
   display: inline-block;
   background-color: #f5faff;
-  color: #2563eb;
+  color: #30B868;
   padding: 4px 14px;
   border-radius: 999px;
   font-size: 12px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Heading & text */
@@ -96,25 +98,37 @@ body {
 }
 
 .hero-content p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
-  max-width: 480px;
-  margin-bottom: 24px;
+  max-width: 560px;
+  margin: 0 auto 28px;   /* auto মানে center */
 }
 
-/* Buttons under hero text */
 .hero-actions {
   display: flex;
+  justify-content: center;  /* buttons center */
   align-items: center;
   gap: 16px;
 }
 
+
+.hero-title {
+  font-size: 50px;        /* Figma te 48–52px er moto */
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-title span {
+  color: #30B868;         /* Figma green */
+}
+
+
 .primary-btn {
-  background-color: #1fb574;
+  background-color: #30B868;
   color: #ffffff;
   border: none;
   border-radius: 4px;
-  padding: 10px 22px;
+  padding: 16px 12px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -125,7 +139,7 @@ body {
   color: #ffffff;
   border: 1px solid rgba(255,255,255,0.5);
   border-radius: 4px;
-  padding: 9px 20px;
+  padding: 16px 12px;
   font-size: 14px;
   cursor: pointer;
 }
